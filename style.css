@@ -5,7 +5,7 @@
 
 .header{
     background: #222;
-    height: 75px;
+    
 
 }
 .logo_header{
@@ -164,6 +164,55 @@ img{
   
 
 }
+
+@media(max-width:1024px){
+
+    .center{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .img{      
+        Width: 386px;
+        Height:368px;
+    }
+    .img1{
+        width: 311px;
+        height: 92px;
+        padding-top: 138px;
+        padding-bottom: 138px;
+    }
+
+    .content{
+        gap:19px;
+    }
+    .product_box{
+        margin-top: 110px;
+    }
+
+    .title{
+        margin-bottom: 3px;
+    }
+
+    .title_text{
+        margin-bottom: 73px;
+    }
+
+    .product-box_content{
+         grid-template-columns: repeat(2, 362px);
+
+    }
+
+
+    .top_button{
+        margin-top: 32px;
+        margin-bottom: 71px;
+    }
+
+
+ 
+}
+
+
 
 
 
