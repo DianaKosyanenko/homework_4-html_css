@@ -1,0 +1,301 @@
+@import 'style';
+@import 'var';
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F8F3F4;
+
+
+&_heading{
+    color: $color;
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    width: 194px;
+    height: 29px;
+}
+}
+
+
+
+.breadcrumbs_link{
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #636363;
+  width: 209px;
+  text-decoration:$Decoration ;
+  
+   &_site{
+    text-decoration: $Decoration;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: $color;
+    width: 209px;
+  }
+}
+
+
+
+
+
+  .slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: $position;
+    background-color: #F7F7F7;
+    padding-top: 10px;
+    padding-bottom: 42px 
+  }
+
+
+  .product_content_center{
+    position:$position_r;
+    display: flex;
+    justify-content: $position;
+    height:601px ;
+    flex-shrink: 0;
+    top:-195px;
+    margin: auto;
+    
+  }
+
+  .product_header{
+    color: $color;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    margin-bottom: 12px;
+}
+
+  .product_content_2{
+    position:absolute;
+    display: flex;
+    width:1141px;
+    padding-top: 64px;
+    flex-direction: column;
+    align-items: $position;
+    padding-bottom: 64px;
+    background-color: #fff; 
+    flex-shrink: 0;
+    margin-top: 129px;
+    border: 1px #EAEAEA solid;
+}
+
+
+.product_header_2{
+  color: rgb(77, 77, 77);
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-top: 13px;
+}
+
+.product_text{
+  display: flex;
+  text-align: $position;
+  color: rgb(94, 94, 94);
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  margin-bottom: $PaddingMediaPS;
+  padding-left: 292px;
+  padding-right: 294px;
+  margin-top: 49px;
+}
+
+.coast{
+  color: $color;
+  font-family: $color;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  margin-bottom: 65px;
+}
+
+.sort{
+  display: flex;
+  gap:23px;
+  margin-top: 65px;
+
+&_choose{
+  display: flex;
+  gap:9px;
+  color: rgb(111, 110, 110);
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+}
+
+
+.product_button{
+  width: 212px;
+  height: 48px;
+  display: flex;
+  align-items: $position;
+  padding-left: 24px;
+  padding-right: 50px;
+  gap:23px;
+  border: 1px $color solid;
+  background-color: #FFF;
+  margin-top: 49px;
+ 
+}
+
+
+.button{
+  color: $color;
+  font-size: $PaddingMedia;
+  font-style: $FontStyle;
+  font-weight: 400;
+  line-height: $FontStyle;
+  font-family: $font;
+  line-height: 19px;
+  margin-top: 25px;
+  
+}
+
+
+.footer_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: $position;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-top: 128px;
+  flex-wrap: wrap;
+  &_left{
+    display: flex;
+    align-items: $position;
+    flex-direction: column;
+    padding-top: 97px;
+    padding-bottom: 126px;
+    
+  }
+    &_right{
+      display: flex;
+      align-items: $position;
+      flex-direction: column;
+      padding-top: 155px;
+      padding-bottom: 149px;
+    }
+  
+    &_text{
+      color: rgb(34, 34, 36);
+      font-family: $font;
+      font-style: italic;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-top: 30px;
+      text-align: $position;
+      max-width: 360px;
+    }
+    &_right_heading{
+      color: rgb(34, 34, 36);
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 700px;
+    }
+    &_right_text{
+    color: rgb(34, 34, 36);
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 34px;
+    }
+  }
+
+
+
+
+
+.box_email{
+  display: flex;
+}
+
+.email{
+  background: rgb(225, 225, 225);
+  width: 230px;
+  height: 49px;
+  border:$Decoration;
+  border-radius: 25px 0 0 25px; 
+  padding-left: 22px;
+  padding-left: 22px;
+  color: rgb(34, 34, 36);
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+
+}
+
+.button_email{
+  background: $color;
+  width: 100px;
+  height: 49px;
+  border: $Decoration;
+  border-radius: 0 25px 25px 0; 
+  color: rgb(255, 255, 255);
+  font-family:$font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+
+.footer_right{
+  display: flex;
+  gap: 7px;
+  &_item{
+      display: flex;
+      justify-content: $position;
+      align-items: $position;
+      width: $PaddingMediaPS;
+      height: $PaddingMediaPS;
+      background-color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
