@@ -1,0 +1,19 @@
+@import 'style';
+@import 'product';
+@import 'var';
+
+.filter{
+   
+    padding: 13px 16px 16px;
+    width: 360px;
+
+    &__summary{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+}
+
+.filter__sort{
+    padding-top: 39px;
+}
