@@ -1,5 +1,34 @@
-@import 'style';
+@import 'mixins';
 @import 'var';
+.header{
+  background: $BackgroundColor;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: $position;
+  min-height: 75px;
+  padding-left: $padding;
+  padding-right: $padding;
+
+&_img{
+  @include Flex;
+  gap: 33px
+}
+
+
+&_left{
+  @include Flex;
+  align-items: $position;
+  gap: 41px;
+}
+
+&_right{
+  display: flex;
+  align-items: $position;
+  gap:33px;
+}
+}
+
 
 .head{
     display: flex;

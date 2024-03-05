@@ -20,13 +20,13 @@
     padding-right: $padding;
 
 &_img{
-    @include FlexDirection;
+    @include Flex;
     gap: 33px
 }
 
 
 &_left{
-    @include FlexDirection;
+    @include Flex;
     align-items: $position;
     gap: 41px;
 }
@@ -266,7 +266,7 @@ img{
 .footer{
     background-color: $BackgroundColor;
     height: 79px;
-    @include FlexDirection;
+    @include Flex;
     justify-content: space-between;
     align-items: $position;
     padding-left: $padding;

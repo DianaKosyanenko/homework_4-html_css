@@ -1,19 +1,214 @@
-@import 'style';
 @import 'product';
 @import 'var';
 
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: $Decoration;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+summary{
+    display: block;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
 .filter{
    
-    padding: 13px 16px 16px;
+    padding-top: 13px;
     width: 360px;
+    z-index: 10;
+    box-sizing: border-box;
+    position: $position_r;
+   
+  &__content{
+    background-color: #fff;
+    padding-top: 0;
+    padding-right: $PaddingMedia;
+    padding-bottom: $PaddingMedia;
+    padding-left: $PaddingMedia;
+  }
+    box-sizing: border-box;
+
+    &[open]{
+        background-color: #fff;
+        box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter__text{
+        color:$color;
+
+    }
+
+    &[open] path{
+        fill:$color;
+    }
 
     &__summary{
         display: flex;
-        align-items: center;
+        align-items: $position;
         gap: 11px;
+        padding-left: $PaddingMedia;
+        
+    }
+    &__text{
+        font-family: $font;
+        font-weight: 600;
+        font-size: 14px;
+        color: #000;
+    }
+
+    &__item{
+        gap:$PaddingMedia;
+    }
+
+    &__heading{
+        font-family: $font;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+        margin-top: $PaddingMedia;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $color;
+    }
+
+    &__link{
+        font-family: $font;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+        &:hover{
+            color:$color;
+        }
+    }
+    &__link_box{
+        gap:11px;
+        display: flex;
+        flex-direction: column;
+        padding:24px 16px;
+      
+    }
+    &__item[open] .filter__heading{
+            color:$color;
+        }
+    }
+
+.filter__sort{
+    position: $position_r;
+    height: 132px;
+    padding-top: 39px;
+    display:flex;
+    gap:30px;
+    box-sizing: border-box;
+    
+
+}
+
+.sort_c{
+    padding-top: 12px;
+    display: flex;
+    gap:18px;
+    &__heading{
+        font-family: $font;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+    }
+
+    &__summary{
+        display: flex;
+        align-items: $position;
+        gap:10px;
+    }
+
+    &__box{
+        box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+        background: #fff;
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        left:-9px;
+        top:22px;
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+    }
+
+    &__check{
+        display: flex;
+        gap:9px;
+        align-items: $position;
+        font-family: $font;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+    }
+
+    &__details{
+        position: $position_r;
     }
 }
 
-.filter__sort{
-    padding-top: 39px;
+.catalog_2_man{
+    width: 360px;
+    height: 420px;
+    display: flex;
+    align-items: $position;
+    background-color: #F7E4E2;
+    justify-content: $position;
 }
+
+.pred__footer{
+    height: 341px;
+    background-color: $BackgroundColor ;
+}
+
+.pred__footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: $position;
+    gap:30px
+}
+
+.delivery{
+    display: flex;
+    justify-content: $position;
+    flex-direction: column;
+    align-items: $position;
+    padding-top: 103px;
+}
+
+.delivery__text{
+    font-family: $font;
+    font-weight: 400;
+    font-size: 19px;
+    color: #fbfbfb;
+    margin-top: 28px;
+}
+
+.delivery__description{
+    text-align: $position;
+    margin-top: 16px;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 13px;
+    color: #fbfbfb;
+}
+
+.footer_box_catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: $position;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    flex-wrap: wrap;
+}
+
+
+
