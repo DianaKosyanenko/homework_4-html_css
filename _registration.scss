@@ -1,0 +1,139 @@
+@import 'var';
+.registration{
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    gap:128px;
+    margin-bottom: 96px;
+    &__cart_form{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        margin-top: 20px;
+       
+   
+        
+    }
+    &__cart_1{
+        margin-bottom: 31px;
+    }
+    &__cart_name{
+        font-weight: 400;
+        font-size: 16px;
+        color: $BackgroundColor;
+        font-family: $font;
+    }
+    &__button_cart1{
+        display: flex;
+        gap:20px;
+        box-sizing: border-box;
+        margin-bottom: 33px;
+
+    }
+    &__cart_2{
+        margin-bottom: 15px;
+    }
+
+    &__cart_text{
+        font-weight: 300;
+        font-size: 13px;
+        color: #b1b1b1;
+        font-family: $font;
+        max-width: 360px;
+        margin-bottom: 39px;
+    }
+
+    &__cart_button{
+        width: 167px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid rgb(164, 164, 164);
+        font-weight: 400;
+        font-size: 14px;
+        display: flex;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+    }
+    
+    
+  
+}
+
+.registration__cart_button:hover{
+    color:white;
+    background-color: $color;
+    border: none;;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+  }
+  
+  ul li:before {
+    content: '✓';
+  }
+  li{
+    display: flex;
+    gap:22px;
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+.name{
+    width: 360px;
+    height: 45px;
+    padding-left: 18px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #b1b1b1;
+    border: 1px solid rgb(164, 164, 164);
+
+}
+
+.btn{
+    display: flex;
+    gap:10px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #000;
+    font-family: $font;
+
+}
+
+
+.registration__content_header{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    font-family: $font; 
+    color:#000;
+    margin-bottom: 22px;
+}
+
+.registration__content_text{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    font-family: $font;
+    margin-bottom: 21px;
+}
+
+
+
+ 
+
+
+
+  
+
+
+  
+
