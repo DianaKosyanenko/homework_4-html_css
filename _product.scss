@@ -28,6 +28,15 @@
   gap:33px;
 }
 }
+.icon:hover path{
+  fill: $color;
+  transition: 0,7s; 
+}
+.icon{
+  display: block;
+  max-width:100% ;
+  flex-shrink: 0;
+}
 
 
 .head{

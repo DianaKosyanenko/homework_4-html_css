@@ -1,3 +1,4 @@
+@import 'registration';
 @import 'catalog';
 @import 'product';
 @import 'var';
@@ -8,6 +9,7 @@
     margin: 0;
     padding: 0;
 }
+
 
 
 .header{
@@ -39,6 +41,7 @@
 }
 }
 
+
 img{
     display: block;
     max-width:100% ;
@@ -50,15 +53,25 @@ img{
         height: $PaddingMedia;
         background-color: #FFF;
     
-&_footer:hover path{
-        fill: darkblue;
+        
+    }
     
 }
+.icon:hover path{
+    fill: $color;
+    transition: 0,7s; 
 }
+.img_footer:hover path{
+    fill: $color;
 }
 
 .promo-content{
     padding-left: 64px;
+}
+.icon{
+    display: block;
+    max-width:100% ;
+    flex-shrink: 0;
 }
 
 .promo-info{
@@ -254,7 +267,11 @@ img{
     width: 212px;
     height: 48px;
     color: #F26376;
-    border-color: #FF6A6A;
+    border: 1px solid #F26376;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     
     @include FontSize;
