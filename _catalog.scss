@@ -1,4 +1,4 @@
-@import 'product';
+
 @import 'var';
 
 *{
@@ -171,7 +171,8 @@ summary::-webkit-details-marker{
     display: flex;
     justify-content: space-between;
     align-items: $position;
-    gap:30px
+    gap:30px;
+    padding-top: 103px;
 }
 
 .delivery{
@@ -179,7 +180,7 @@ summary::-webkit-details-marker{
     justify-content: $position;
     flex-direction: column;
     align-items: $position;
-    padding-top: 103px;
+    
 }
 
 .delivery__text{
@@ -209,6 +210,98 @@ summary::-webkit-details-marker{
     background-position: left center;
     flex-wrap: wrap;
 }
+.top_button_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 96px;
+    
+    
+}
+
+.footer_box_left_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 97px;
+    padding-bottom: 126px;
+}
+.footer_box_right_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 155px;
+    padding-bottom: 149px;
+}
+
+
+@media(max-width:1024px){
+    // center{
+    //     padding-left: $PaddingMedia ;
+    //     // padding-right: $PaddingMedia;
+    // }
+    .header{
+        padding-right: $PaddingMediaPS;
+        padding-left: $PaddingMediaPS;
+        
+    }
+    .top_button_1{
+        margin-top: 40px;
+        margin-bottom: 63px;
+    }
+    .footer_box_left_1{
+        padding-top: 64px;
+        padding-bottom: 48px;
+
+}
+    
+
+    .filter__sort {
+        gap: 90px;
+    }
+    .pred__footer {
+        height:610px;
+        &_content{
+            flex-direction: column;
+            gap:49px;
+            padding-top: 48px;
+        }
+    }
+    .delivery{
+      
+       max-width:360px;
+
+    }
+    .footer_box_catalog{
+        flex-direction: column;
+       background-image: url(img/photo\ subscribe.png);
+     
+    }
+    .boy{
+        display: none;
+    }
+    .footer_box_right_1{
+        padding-bottom: 140px;
+        padding-top: 48px;
+        
+}
+    }
+    .center {
+        padding-left: calc(50% - 370px);
+        padding-right: calc(50% - 370px);
+    
+}
+.footer{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+.product-box_content{
+    gap:16px;
+}
+
 
 
 
