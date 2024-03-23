@@ -1,4 +1,3 @@
-@import 'mixins';
 @import 'var';
 .header{
   background: $BackgroundColor;
@@ -11,13 +10,15 @@
   padding-right: $padding;
 
 &_img{
-  @include Flex;
+  display: flex;
+  flex-direction: row;
   gap: 33px
 }
 
 
 &_left{
-  @include Flex;
+  display: flex;
+  flex-direction: row;
   align-items: $position;
   gap: 41px;
 }
@@ -154,7 +155,7 @@
 
 .coast{
   color: $color;
-  font-family: $color;
+  font-family: $font;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
@@ -348,6 +349,60 @@
   padding-bottom: 140px;
 }
 
+}
+
+@media(max-width:767px){
+  .center{
+    padding-right: $PaddingMedia;
+    padding-left: $PaddingMedia;
+}
+.header{
+    padding-right: $PaddingMediaPS;
+    padding-left: $PaddingMediaPS;
+}
+.head{
+  flex-direction: column;
+  align-items: $position;
+  justify-content: $position;
+  gap:32px;
+  padding-top: 24px;
+  padding-bottom: 46px;
+}
+.product__description__svg{
+  max-width: 50%;
+}
+.slider{
+  min-height: 624px;
+}
+
+.product_text{
+  margin-top: 32px;
+  padding-left: 24px;
+  padding-right: 25px;
+}
+.coast{
+  margin-bottom: 32px;
+}
+.sort_choose{
+  font-size: 10px;
+}
+.product_button{
+  margin-top: 64px;
+}
+.product-box_content{
+  gap:0;
+}
+.footer_box{
+  margin-top: 0;
+}
+
+.girl_svg{
+ display: block;
+}
+
+.boy_svg{
+  display: none;
+}
 }
 
 

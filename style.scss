@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -21,6 +22,7 @@
     min-height: 75px;
     padding-left: $padding;
     padding-right: $padding;
+    position: relative;
 
 &_img{
     @include Flex;
@@ -40,7 +42,124 @@
     gap:33px;
 }
 }
+.nav{
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+    background: rgb(255, 255, 255);
+    width: 232px;
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top:75px;
+    right: 0;
+    
+    
+}
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+summary{
+    display: block;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
+.burger__content{
+    background-color: #fff;
+    &__item{
+        display: flex;
+        gap:$PaddingMedia;
+    }
+    
+}
+.burger__heading{
+    font-family: $font;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6f6e6e;
+    margin-top: $PaddingMedia;
+    // padding: 8px 11px 11px 11px;
+    
+}
+.burger__link_box{
+    gap:11px;
+    display: flex;
+    flex-direction: column;
+    padding:24px 16px;
+    .burger__link{
+        font-family: $font;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+        &:hover{
+            color:$color;
+        }
+    }
+    
+}
+.burger__heading__item{
+    font-family: $font;
+    font-size: 14px;
+    color: #000;
+    margin-top: $PaddingMedia;
+    font-weight: 700;
+
+
+}
+
+
+.burger{
+   
+
+    &[open]{
+        background-color: #fff;
+        box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter__text{
+        color:$color;
+
+    }
+
+    &[open] path{
+        fill:$color;
+    }
+
+    &__summary{
+        display: flex;
+        align-items: $position;
+        gap: 11px;
+        padding-left: $PaddingMedia;
+        
+    }
+    &__text{
+        font-family: $font;
+        font-weight: 600;
+        font-size: 14px;
+        color: #000;
+    }
+
+
+
+    &__item[open] .burger__heading{
+            color:$color;
+        }
+    
+}
+  
+
+
+
+#burger{
+    position: absolute;
+    left:-9999999999px;
+    visibility: hidden;
+}
+#burger:checked ~ .nav{
+    display: none;
+}
 
 img{
     display: block;
@@ -299,10 +418,10 @@ img{
 @media(max-width:1024px){
 
 @include media_p; 
-}
 
 
 @media(max-width:767px){
     @include media_s;
 }
 
+}

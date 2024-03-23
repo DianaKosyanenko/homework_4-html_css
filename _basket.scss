@@ -240,5 +240,98 @@
     .basket_right_adress{
         min-width: 360px;
     }
+}
+@media(max-width:767px){
+    .center{
+        padding-right: $PaddingMedia;
+        padding-left: $PaddingMedia;
+    }
+    .header{
+        padding-right: $PaddingMediaPS;
+        padding-left: $PaddingMediaPS;
+    }
+    .head{
+       
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .basket{
+        margin-bottom: 96px;
+    }
+    
+    .basket_img{
+        width:144px;
+        height: 188px;
+    }
+    .bascet_men_2{
+        width:144px;
+        height: 188px;
+    }
+    .basket__left_card1 {
+        width: 358px;
+        height: 188px;
+        margin-top: 39px;
+    }
+    .basket__left_card2 {
+        width: 358px;
+        height: 188px;
+    }
 
+    .basket__left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &_button{
+            margin-top: 30px ;
+            margin-bottom: 48px;
+            gap:9px;
+            &_1{
+                width: 175px;
+                height: 33px;
+                font-size: 12px;
+            }
+        }
+       
+        &_card1_content{
+            padding-top:14px;
+            padding-left: 17px;
+            font-size: 14px;
+            &_head{
+                gap:31px;
+                padding-bottom: 26px;
+               
+                &_title{
+                    font-size: 16px;
+                }
+            }
+        }
+        &_img_button{
+            width: 10px;
+            height: 11px;
+        }
+    }
+
+    .price{
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .quantity__box{
+        gap:15px;
+    }
+    .quantity__box input {
+        width: 24px;
+        height: 15px;
+        
+    }
+    .basket__right{
+        flex-direction: column;
+    }
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
 }
